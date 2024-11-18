@@ -1,0 +1,10 @@
+jupyter
+langchain-anthropic
+langchain-community
+langchain-mistralai
+langchain-openai
+neo4j
+pandas
+py2neo
+tdqm
+openpyxl
