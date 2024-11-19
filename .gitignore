@@ -2,3 +2,5 @@
 /pistoia-llm.code-workspace
 /notebooks/evaluation_results/*
 /notebooks/.venv
+/notebooks/*.json
+/notebooks/*.xlsx
