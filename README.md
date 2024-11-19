@@ -11,7 +11,7 @@ We wish to explore the use of Large Language Models for biological research, usi
 To run the provided Jupyter notebooks, follow these steps:
 
 1. **Create a Virtual Environment**:
-   `python -m venv venv`
+   `python -m venv .venv`
 
 2. **Activate the Virtual Environment**:
    - On Linux/Mac:
