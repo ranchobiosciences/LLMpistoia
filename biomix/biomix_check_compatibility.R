@@ -264,6 +264,10 @@ df_TF_selected_answers %>%
   left_join(answers, by = join_gd) %>% 
   filter(has_relations == answer) 
 
+df_TF %>% 
+  semi_join(df_TF_selected_answers, by = c('qid')) %>% 
+  write_xlsx("testset/biomix_true_false_selected.xlsx")
+
 df_TF_selected_answers %>% 
   write_xlsx(".temp/biomix_tf_selected_answers.xlsx")
 
