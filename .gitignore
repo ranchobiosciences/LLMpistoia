@@ -4,3 +4,11 @@
 /notebooks/.venv
 /notebooks/*.json
 /notebooks/*.xlsx
+/biomix/.temp/*
+/biomix/.env
+/biomix/db/*.xlsx
+/biomix/db/entities_queried_exact.xlsx
+/biomix/db/entities_queried_inexact.xlsx
+/biomix/db/gene_disease_queries.xlsx
+/biomix/db/gene_disease_queries_exact.xlsx
+/biomix/db/gene_disease_queries_inexact.xlsx
