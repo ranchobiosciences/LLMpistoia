@@ -17,7 +17,8 @@ biomix_tf <- biomix_orig[sample(nrow(biomix_orig)),]
 
 biomix_positive <- biomix_tf %>% 
   group_by(label) %>% 
-  filter(row_number() <= 25) %>% 
+  filter(row_number() <= 25) %>%    # this is version 1 (test set)
+  #filter(row_number() > 25 & row_number() <= 50) %>%  # this is version 2 (training set)
   ungroup()
 
 

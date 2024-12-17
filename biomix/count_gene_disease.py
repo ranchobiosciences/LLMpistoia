@@ -25,9 +25,9 @@ print(f"Accessing OpenTargets at {neo4j_uri} as user {neo4j_username}")
 
 # %%
 
-INPUT = "db/gene_disease_queries.xlsx"
-OUTPUT_INEXACT = "db/gene_disease_queries_inexact.xlsx"
-OUTPUT_EXACT = "db/gene_disease_queries_exact.xlsx"
+INPUT = "db/gene_disease_combinations.xlsx"
+OUTPUT_INEXACT = "db/gene_disease_queries_combinations_inexact.xlsx"
+OUTPUT_EXACT = "db/gene_disease_queries_combinations_exact.xlsx"
 
 # %%
 from py2neo import Graph

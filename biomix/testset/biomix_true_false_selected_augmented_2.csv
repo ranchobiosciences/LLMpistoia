@@ -1,0 +1,100 @@
+text,label
+Loeys-Dietz Syndrome associates Gene TGFBR1,True
+Congenital contractural arachnodactyly associates Gene FBN2,True
+Pseudoachondroplasia associates Gene COMP,True
+Fabry Disease associates Gene GLA,True
+Loeys-Dietz Syndrome associates Gene TGFBR2,True
+DOYNE HONEYCOMB RETINAL DYSTROPHY associates Gene EFEMP1,True
+Multiple Endocrine Neoplasia Type 2b associates Gene RET,True
+Tuberous Sclerosis associates Gene TSC2,True
+Mulibrey Nanism is not associated with Gene TRIM37,False
+CAMPOMELIC DYSPLASIA associates Gene SOX9,True
+Nijmegen Breakage Syndrome is not associated with Gene NBN,False
+Bernard-Soulier Syndrome associates Gene GP1BA,True
+Carney Complex is not associated with Gene PRKAR1A,False
+Denys-Drash Syndrome is not associated with Gene WT1,False
+Gray Platelet Syndrome is not associated with Gene NBEAL2,False
+Borjeson-Forssman-Lehmann syndrome is not associated with Gene PHF6,False
+Pfeiffer Syndrome associates Gene FGFR2,True
+Pseudoxanthoma Elasticum associates Gene ABCC6,True
+Peutz-Jeghers Syndrome associates Gene STK11,True
+Sandhoff Disease is not associated with Gene HEXB,False
+Infantile hypophosphatasia associates Gene ALPL,True
+Nail-Patella Syndrome associates Gene LMX1B,True
+Alveolar rhabdomyosarcoma associates Gene PAX3,True
+alpha-Mannosidosis associates Gene MAN2B1,True
+Canavan Disease associates Gene ASPA,True
+Achondroplasia is not associated with Gene FGFR3,False
+L-2-HYDROXYGLUTARIC ACIDURIA associates Gene L2HGDH,True
+Greig cephalopolysyndactyly syndrome associates Gene GLI3,True
+Smith-Magenis syndrome associates Gene RAI1,True
+Rothmund-Thomson syndrome is not associated with Gene RECQL4,False
+Obesity is not associated with Gene PPARG,False
+Angelman Syndrome is not associated with Gene UBE3A,False
+Aspartylglucosaminuria is not associated with Gene AGA,False
+Refsum Disease associates Gene PHYH,True
+Autosomal dominant hypophosphatemic rickets associates Gene FGF23,True
+Choroideremia is not associated with Gene CHM,False
+Li-Fraumeni Syndrome is not associated with Gene TP53,False
+Noonan Syndrome associates Gene KRAS,True
+Hereditary hemorrhagic telangiectasia associates Gene ENG,True
+Unverricht-Lundborg Syndrome is not associated with Gene CSTB,False
+KLEEFSTRA SYNDROME 1 is not associated with Gene EHMT1,False
+Hartnup Disease is not associated with Gene SLC6A19,False
+Fatal Familial Insomnia is not associated with Gene PRNP,False
+Hyperargininemia is not associated with Gene ARG1,False
+Biotinidase Deficiency is not associated with Gene BTD,False
+Congenital amegakaryocytic thrombocytopenia is not associated with Gene MPL,False
+Paroxysmal Nonkinesigenic Dyskinesia 1 is not associated with Gene PNKD,False
+Saethre-Chotzen Syndrome is not associated with Gene TWIST1,False
+beta-Mannosidosis is not associated with Gene MANBA,False
+Osteosarcoma is not associated with Gene TP53,False
+CAMPOMELIC DYSPLASIA is not associated with Gene RECQL4,True
+Aspartylglucosaminuria is not associated with Gene FBN2,True
+Nijmegen Breakage Syndrome is not associated with Gene ENG,True
+L-2-HYDROXYGLUTARIC ACIDURIA is not associated with Gene ABCC6,True
+Peutz-Jeghers Syndrome is not associated with Gene PHF6,True
+Greig cephalopolysyndactyly syndrome is not associated with Gene PHYH,True
+Pseudoachondroplasia is not associated with Gene WT1,True
+Gray Platelet Syndrome is not associated with Gene BTD,True
+L-2-HYDROXYGLUTARIC ACIDURIA is not associated with Gene FGFR3,True
+Noonan Syndrome is not associated with Gene EFEMP1,True
+Autosomal dominant hypophosphatemic rickets is not associated with Gene CHM,True
+Aspartylglucosaminuria is not associated with Gene CSTB,True
+L-2-HYDROXYGLUTARIC ACIDURIA is not associated with Gene MANBA,True
+Greig cephalopolysyndactyly syndrome is not associated with Gene ALPL,True
+Hyperargininemia is not associated with Gene GLI3,True
+Saethre-Chotzen Syndrome is not associated with Gene NBN,True
+Bernard-Soulier Syndrome is not associated with Gene FGFR2,True
+Refsum Disease is not associated with Gene PAX3,True
+KLEEFSTRA SYNDROME 1 is not associated with Gene TGFBR2,True
+Gray Platelet Syndrome is not associated with Gene HEXB,True
+Biotinidase Deficiency is not associated with Gene TP53,True
+Loeys-Dietz Syndrome is not associated with Gene STK11,True
+Choroideremia is not associated with Gene L2HGDH,True
+Li-Fraumeni Syndrome is not associated with Gene MAN2B1,True
+Noonan Syndrome is associated with Gene TSC2,False
+Alveolar rhabdomyosarcoma is associated with Gene TGFBR1,False
+Rothmund-Thomson syndrome is associated with Gene EHMT1,False
+alpha-Mannosidosis is associated with Gene RET,False
+Congenital contractural arachnodactyly is associated with Gene TRIM37,False
+Pfeiffer Syndrome is associated with Gene UBE3A,False
+Paroxysmal Nonkinesigenic Dyskinesia 1 is associated with Gene ASPA,False
+Hyperargininemia is associated with Gene LMX1B,False
+Hereditary hemorrhagic telangiectasia is associated with Gene PPARG,False
+Pfeiffer Syndrome is associated with Gene GP1BA,False
+Noonan Syndrome is associated with Gene AGA,False
+beta-Mannosidosis is associated with Gene NBEAL2,False
+Autosomal dominant hypophosphatemic rickets is associated with Gene MPL,False
+Obesity is associated with Gene PNKD,False
+CAMPOMELIC DYSPLASIA is associated with Gene TWIST1,False
+Multiple Endocrine Neoplasia Type 2b is associated with Gene GLA,False
+Denys-Drash Syndrome is associated with Gene SLC6A19,False
+Hereditary hemorrhagic telangiectasia is associated with Gene SOX9,False
+Congenital contractural arachnodactyly is associated with Gene COMP,False
+Hyperargininemia is associated with Gene FGF23,False
+Rothmund-Thomson syndrome is associated with Gene ARG1,False
+Canavan Disease is associated with Gene PRKAR1A,False
+Peutz-Jeghers Syndrome is associated with Gene RAI1,False
+Bernard-Soulier Syndrome is associated with Gene PRNP,False
+Aspartylglucosaminuria is associated with Gene KRAS,False
