@@ -12,3 +12,5 @@
 /biomix/db/gene_disease_queries.xlsx
 /biomix/db/gene_disease_queries_exact.xlsx
 /biomix/db/gene_disease_queries_inexact.xlsx
+
+/utils/.env
