@@ -1,0 +1,9 @@
+Generate a short report on your work. The first line should be answer to user's question (True or False). 
+
+Add the following sections:
+- The question, as specified by user
+- Problem statement
+- Approach taken
+- What worked what didn't worked
+- Recommendations
+- Final result

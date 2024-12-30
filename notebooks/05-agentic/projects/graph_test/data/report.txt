@@ -1,0 +1,7 @@
+Generate a short report on your work. Add the following sections:
+
+- Problem statement
+- Approach taken
+- What worked what didn't worked
+- Results (include files with descriptions)
+- Recommendations

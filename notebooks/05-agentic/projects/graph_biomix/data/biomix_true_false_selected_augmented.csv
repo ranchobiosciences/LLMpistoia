@@ -1,0 +1,101 @@
+text,label
+Polycythemia Vera is not associated with Gene JAK2,False
+Cystic Fibrosis associates Gene CFTR,True
+Cleidocranial Dysplasia associates Gene RUNX2,True
+Ellis-Van Creveld Syndrome associates Gene EVC2,True
+Juvenile polyposis syndrome associates Gene BMPR1A,True
+Laron Syndrome associates Gene GHR,True
+Wiskott-Aldrich Syndrome is not associated with Gene WAS,False
+Smith-Lemli-Opitz Syndrome is not associated with Gene DHCR7,False
+Johanson-Blizzard syndrome associates Gene UBR1,True
+Noonan Syndrome associates Gene RAF1,True
+Progeria associates Gene LMNA,True
+Spinocerebellar Ataxia Type 1 is not associated with Gene ATXN1,False
+Alkaptonuria associates Gene HGD,True
+CHARGE Syndrome is not associated with Gene CHD7,False
+WHIM syndrome is not associated with Gene CXCR4,False
+Maple Syrup Urine Disease associates Gene DBT,True
+Sarcoma associates Gene TP53,True
+Ulnar-mammary syndrome is not associated with Gene TBX3,False
+Brachydactyly type C is not associated with Gene GDF5,False
+Chediak-Higashi Syndrome associates Gene LYST,True
+BIETTI CRYSTALLINE CORNEORETINAL DYSTROPHY is not associated with Gene CYP4V2,False
+Ethylmalonic encephalopathy is not associated with Gene ETHE1,False
+Bernard-Soulier Syndrome associates Gene GP1BB,True
+melanoma associates Gene BRAF,True
+Noonan Syndrome associates Gene PTPN11,True
+Juvenile Myoclonic Epilepsy is not associated with Gene EFHC1,False
+Adenine phosphoribosyltransferase deficiency associates Gene APRT,True
+Mowat-Wilson syndrome is not associated with Gene ZEB2,False
+Werner Syndrome associates Gene WRN,True
+Lesch-Nyhan Syndrome associates Gene HPRT1,True
+Adrenoleukodystrophy associates Gene ABCD1,True
+Wolcott-Rallison syndrome associates Gene EIF2AK3,True
+Alexander Disease associates Gene GFAP,True
+Cystinuria is not associated with Gene SLC3A1,False
+Coffin-Lowry syndrome associates Gene RPS6KA3,True
+Cystinuria is not associated with Gene SLC7A9,False
+Obesity is not associated with Gene MC4R,False
+Hemophilia B is not associated with Gene F9,False
+Sitosterolemia is not associated with Gene ABCG8,False
+Argininosuccinic Aciduria associates Gene ASL,True
+Acute intermittent porphyria is not associated with Gene HMBS,False
+Nance-Horan syndrome associates Gene NHS,True
+Cherubism associates Gene SH3BP2,True
+Holt-Oram syndrome is not associated with Gene TBX5,False
+Mastocytosis is not associated with Gene KIT,False
+Pierson syndrome is not associated with Gene LAMB2,False
+Very long chain acyl-CoA dehydrogenase deficiency is not associated with Gene ACADVL,False
+Tangier Disease is not associated with Gene ABCA1,False
+Microvillus inclusion disease is not associated with Gene MYO5B,False
+PITT-HOPKINS SYNDROME is not associated with Gene TCF4,False
+Very long chain acyl-CoA dehydrogenase deficiency is not associated with Gene LAMB2,True
+Adenine phosphoribosyltransferase deficiency is not associated with Gene LMNA,True
+Obesity is not associated with Gene RAF1,True
+Cherubism is not associated with Gene UBR1,True
+Obesity is not associated with Gene ASL,True
+Sitosterolemia is not associated with Gene EFHC1,True
+Coffin-Lowry syndrome is not associated with Gene CFTR,True
+Cleidocranial Dysplasia is not associated with Gene ATXN1,True
+Nance-Horan syndrome is not associated with Gene BRAF,True
+Adrenoleukodystrophy is not associated with Gene SLC3A1,True
+PITT-HOPKINS SYNDROME is not associated with Gene HGD,True
+Adenine phosphoribosyltransferase deficiency is not associated with Gene ABCG8,True
+CHARGE Syndrome is not associated with Gene ETHE1,True
+Cystinuria is not associated with Gene JAK2,True
+Laron Syndrome is not associated with Gene DHCR7,True
+Pierson syndrome is not associated with Gene KIT,True
+Cherubism is not associated with Gene F9,True
+Argininosuccinic Aciduria is not associated with Gene SH3BP2,True
+Brachydactyly type C is not associated with Gene TCF4,True
+Mastocytosis is not associated with Gene GFAP,True
+Cystinuria is not associated with Gene GP1BB,True
+Lesch-Nyhan Syndrome is not associated with Gene ABCA1,True
+Laron Syndrome is not associated with Gene TP53,True
+Progeria is not associated with Gene CHD7,True
+Cystic Fibrosis is not associated with Gene SLC7A9,True
+CHARGE Syndrome is associated with Gene WRN,False
+Ulnar-mammary syndrome is associated with Gene MC4R,False
+Polycythemia Vera is associated with Gene ZEB2,False
+Progeria is associated with Gene MYO5B,False
+Acute intermittent porphyria is associated with Gene CYP4V2,False
+CHARGE Syndrome is associated with Gene APRT,False
+BIETTI CRYSTALLINE CORNEORETINAL DYSTROPHY is associated with Gene HPRT1,False
+Maple Syrup Urine Disease is associated with Gene PTPN11,False
+Argininosuccinic Aciduria is associated with Gene ABCD1,False
+Sitosterolemia is associated with Gene HMBS,False
+Maple Syrup Urine Disease is associated with Gene WAS,False
+Ulnar-mammary syndrome is associated with Gene NHS,False
+Noonan Syndrome is associated with Gene DBT,False
+Lesch-Nyhan Syndrome is associated with Gene EVC2,False
+Maple Syrup Urine Disease is associated with Gene EIF2AK3,False
+Sitosterolemia is associated with Gene TBX3,False
+Acute intermittent porphyria is associated with Gene CXCR4,False
+Alkaptonuria is associated with Gene LYST,False
+Coffin-Lowry syndrome is associated with Gene BMPR1A,False
+Werner Syndrome is associated with Gene ACADVL,False
+Polycythemia Vera is associated with Gene RPS6KA3,False
+BIETTI CRYSTALLINE CORNEORETINAL DYSTROPHY is associated with Gene RUNX2,False
+Pierson syndrome is associated with Gene GDF5,False
+Cystinuria is associated with Gene GHR,False
+Smith-Lemli-Opitz Syndrome is associated with Gene TBX5,False
