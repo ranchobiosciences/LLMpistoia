@@ -6,6 +6,15 @@ library(tidyverse)
 library(readxl)
 library(writexl)
 
+
+# input/output configuration
+
+exact_relationships <- "db/gene_disease_queries_combinations_exact.xlsx"
+inexact_relationships <- "db/gene_disease_queries_combinations_inexact.xlsx"
+output_xlsx <- "testset/biomix_true_false_selected_augmented.xlsx"
+output_csv <- "testset/biomix_true_false_selected_augmented.csv"
+
+
 # Selected 50 gene/disease relationships from BioMix:
 
 biomix_orig <- read_xlsx("testset/biomix_true_false_selected.xlsx")
@@ -50,8 +59,8 @@ gene_disease_combinations %>%
 
 # To construct negative test-set we need queried relationships
 
-rel_exact <- read_xlsx("db/gene_disease_queries_combinations_exact.xlsx") 
-rel_inexact <- read_xlsx("db/gene_disease_queries_combinations_inexact.xlsx")
+rel_exact <- read_xlsx(exact_relationships) 
+rel_inexact <- read_xlsx(inexact_relationships)
 
 empty_rels <- rel_exact %>% 
   left_join(rel_inexact, by = c("gene" = "gene", "disease" = "disease")) %>% 
@@ -79,9 +88,9 @@ biomix_negative_upd <- biomix_negative %>%
 full <- bind_rows(biomix_positive, biomix_negative_upd) 
 
 full %>%
-  write_xlsx("testset/biomix_true_false_selected_augmented.xlsx")
+  write_xlsx(output_xlsx)
 
 full %>% 
   select(text, label) %>% 
   mutate(label = ifelse(label, "True", "False")) %>% 
-  write_csv("testset/biomix_true_false_selected_augmented.csv")  
+  write_csv(output_csv)  

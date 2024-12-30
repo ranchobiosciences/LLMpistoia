@@ -14,3 +14,5 @@
 /biomix/db/gene_disease_queries_inexact.xlsx
 
 /utils/.env
+
+/notebooks/.temp/*
