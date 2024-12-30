@@ -1,0 +1,42 @@
+{
+  "self": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Given the statement, evaluate its correctness",
+      "fields": [
+        {
+          "prefix": "Statement:",
+          "description": "The statement to be evaluated"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    },
+    "extended_signature": {
+      "instructions": "Given the statement, evaluate its correctness",
+      "fields": [
+        {
+          "prefix": "Statement:",
+          "description": "The statement to be evaluated"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    }
+  }
+}

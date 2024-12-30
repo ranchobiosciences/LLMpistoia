@@ -1,0 +1,211 @@
+{
+  "react": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "statement": "Saethre-Chotzen Syndrome is not associated with Gene TWIST1",
+        "answer": false
+      },
+      {
+        "statement": "L-2-HYDROXYGLUTARIC ACIDURIA associates Gene L2HGDH",
+        "answer": true
+      },
+      {
+        "statement": "KLEEFSTRA SYNDROME 1 is not associated with Gene EHMT1",
+        "answer": false
+      },
+      {
+        "statement": "Nijmegen Breakage Syndrome is not associated with Gene NBN",
+        "answer": false
+      },
+      {
+        "statement": "Loeys-Dietz Syndrome associates Gene TGFBR2",
+        "answer": true
+      },
+      {
+        "statement": "Hyperargininemia is not associated with Gene GLI3",
+        "answer": true
+      },
+      {
+        "statement": "Li-Fraumeni Syndrome is not associated with Gene MAN2B1",
+        "answer": true
+      },
+      {
+        "statement": "Bernard-Soulier Syndrome is associated with Gene PRNP",
+        "answer": false
+      },
+      {
+        "statement": "Fatal Familial Insomnia is not associated with Gene PRNP",
+        "answer": false
+      },
+      {
+        "statement": "Noonan Syndrome is associated with Gene AGA",
+        "answer": false
+      },
+      {
+        "statement": "Loeys-Dietz Syndrome associates Gene TGFBR1",
+        "answer": true
+      },
+      {
+        "statement": "Peutz-Jeghers Syndrome associates Gene STK11",
+        "answer": true
+      },
+      {
+        "statement": "Canavan Disease is associated with Gene PRKAR1A",
+        "answer": false
+      },
+      {
+        "statement": "Rothmund-Thomson syndrome is associated with Gene EHMT1",
+        "answer": false
+      },
+      {
+        "statement": "Carney Complex is not associated with Gene PRKAR1A",
+        "answer": false
+      },
+      {
+        "statement": "L-2-HYDROXYGLUTARIC ACIDURIA is not associated with Gene MANBA",
+        "answer": true
+      }
+    ],
+    "signature": {
+      "instructions": "Your task is to verify the accuracy of a given statement regarding the association between a disease (or syndrome) and a gene using a knowledge graph. Begin by analyzing the statement and formulating a plan to confirm its validity. Use the `run_cypher_query` tool to execute a Cypher query on the knowledge graph, checking for the presence or absence of the specified association. Document your reasoning process and tool usage in a structured manner, including the tool name and arguments. Once you have gathered sufficient evidence from the query results, use the `finish` tool to conclude the task and provide a final assessment of the statement's correctness. Remember to iteratively refine your approach if needed, ensuring a thorough and accurate evaluation within the allowed iterations.",
+      "fields": [
+        {
+          "prefix": "Statement:",
+          "description": "The statement to be evaluated"
+        },
+        {
+          "prefix": "Trajectory:",
+          "description": "${trajectory}"
+        },
+        {
+          "prefix": "Next Thought:",
+          "description": "${next_thought}"
+        },
+        {
+          "prefix": "Next Tool Name:",
+          "description": "${next_tool_name}"
+        },
+        {
+          "prefix": "Next Tool Args:",
+          "description": "${next_tool_args}"
+        }
+      ]
+    }
+  },
+  "extract": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "statement": "Li-Fraumeni Syndrome is not associated with Gene MAN2B1",
+        "answer": true
+      },
+      {
+        "statement": "Nijmegen Breakage Syndrome is not associated with Gene NBN",
+        "answer": false
+      },
+      {
+        "statement": "Carney Complex is not associated with Gene PRKAR1A",
+        "answer": false
+      },
+      {
+        "statement": "Bernard-Soulier Syndrome is associated with Gene PRNP",
+        "answer": false
+      },
+      {
+        "statement": "Loeys-Dietz Syndrome associates Gene TGFBR1",
+        "answer": true
+      },
+      {
+        "statement": "KLEEFSTRA SYNDROME 1 is not associated with Gene EHMT1",
+        "answer": false
+      },
+      {
+        "statement": "Rothmund-Thomson syndrome is associated with Gene EHMT1",
+        "answer": false
+      },
+      {
+        "statement": "Biotinidase Deficiency is not associated with Gene BTD",
+        "answer": false
+      },
+      {
+        "statement": "Angelman Syndrome is not associated with Gene UBE3A",
+        "answer": false
+      },
+      {
+        "statement": "Noonan Syndrome is associated with Gene AGA",
+        "answer": false
+      },
+      {
+        "statement": "Fatal Familial Insomnia is not associated with Gene PRNP",
+        "answer": false
+      },
+      {
+        "statement": "CAMPOMELIC DYSPLASIA is associated with Gene TWIST1",
+        "answer": false
+      },
+      {
+        "statement": "Saethre-Chotzen Syndrome is not associated with Gene TWIST1",
+        "answer": false
+      },
+      {
+        "statement": "Canavan Disease is associated with Gene PRKAR1A",
+        "answer": false
+      },
+      {
+        "statement": "Peutz-Jeghers Syndrome associates Gene STK11",
+        "answer": true
+      },
+      {
+        "statement": "Hyperargininemia is not associated with Gene GLI3",
+        "answer": true
+      }
+    ],
+    "signature": {
+      "instructions": "Given the statement, evaluate its correctness using information in the knowledge graph",
+      "fields": [
+        {
+          "prefix": "Statement:",
+          "description": "The statement to be evaluated"
+        },
+        {
+          "prefix": "Trajectory:",
+          "description": "${trajectory}"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    },
+    "extended_signature": {
+      "instructions": "Given the statement, evaluate its correctness using information in the knowledge graph",
+      "fields": [
+        {
+          "prefix": "Statement:",
+          "description": "The statement to be evaluated"
+        },
+        {
+          "prefix": "Trajectory:",
+          "description": "${trajectory}"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    }
+  }
+}

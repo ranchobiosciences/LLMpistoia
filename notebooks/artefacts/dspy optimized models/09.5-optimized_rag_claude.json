@@ -1,0 +1,228 @@
+{
+  "generate_query": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "statement": "Saethre-Chotzen Syndrome is not associated with Gene TWIST1",
+        "answer": false
+      },
+      {
+        "statement": "L-2-HYDROXYGLUTARIC ACIDURIA associates Gene L2HGDH",
+        "answer": true
+      },
+      {
+        "statement": "KLEEFSTRA SYNDROME 1 is not associated with Gene EHMT1",
+        "answer": false
+      },
+      {
+        "statement": "Nijmegen Breakage Syndrome is not associated with Gene NBN",
+        "answer": false
+      },
+      {
+        "statement": "Loeys-Dietz Syndrome associates Gene TGFBR2",
+        "answer": true
+      },
+      {
+        "statement": "Hyperargininemia is not associated with Gene GLI3",
+        "answer": true
+      },
+      {
+        "statement": "Li-Fraumeni Syndrome is not associated with Gene MAN2B1",
+        "answer": true
+      },
+      {
+        "statement": "Bernard-Soulier Syndrome is associated with Gene PRNP",
+        "answer": false
+      },
+      {
+        "statement": "Fatal Familial Insomnia is not associated with Gene PRNP",
+        "answer": false
+      },
+      {
+        "statement": "Noonan Syndrome is associated with Gene AGA",
+        "answer": false
+      },
+      {
+        "statement": "Loeys-Dietz Syndrome associates Gene TGFBR1",
+        "answer": true
+      },
+      {
+        "statement": "Peutz-Jeghers Syndrome associates Gene STK11",
+        "answer": true
+      },
+      {
+        "statement": "Canavan Disease is associated with Gene PRKAR1A",
+        "answer": false
+      },
+      {
+        "statement": "Rothmund-Thomson syndrome is associated with Gene EHMT1",
+        "answer": false
+      },
+      {
+        "statement": "Carney Complex is not associated with Gene PRKAR1A",
+        "answer": false
+      },
+      {
+        "statement": "L-2-HYDROXYGLUTARIC ACIDURIA is not associated with Gene MANBA",
+        "answer": true
+      }
+    ],
+    "signature": {
+      "instructions": "Generate cypher statement to check correctness of a statement",
+      "fields": [
+        {
+          "prefix": "Statement:",
+          "description": "${statement}"
+        },
+        {
+          "prefix": "Schema:",
+          "description": "Schema of a neo4j database"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Cypher:",
+          "description": "Valid cypher query that can be used to check correctness of the statement"
+        }
+      ]
+    },
+    "extended_signature": {
+      "instructions": "You are an expert in genetic diseases and graph databases. Your task is to craft a precise Cypher query to verify the accuracy of a given statement about gene-disease associations. Follow these steps:\n\n1. Carefully analyze the provided statement, identifying the disease and gene mentioned.\n2. Consider various ways the disease or gene might be represented in the database (e.g., full names, abbreviations, or synonyms).\n3. Construct a Cypher query that:\n   a. Matches the disease node, using case-insensitive and partial matching for flexibility.\n   b. Matches the gene node, using the exact approved symbol.\n   c. Looks for any type of GeneToDiseaseAssociation between them.\n   d. Returns relevant information such as disease name, gene symbol, association type, and score.\n\n4. Include appropriate comments in your query to explain your reasoning.\n5. If applicable, add a LIMIT clause to prevent overwhelming results.\n\nRemember, the goal is to create a query that will accurately determine whether the statement is true or false based on the data in the graph database. Be thorough in your approach to catch potential variations in how the information might be stored.",
+      "fields": [
+        {
+          "prefix": "Statement:",
+          "description": "${statement}"
+        },
+        {
+          "prefix": "Schema:",
+          "description": "Schema of a neo4j database"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Cypher:",
+          "description": "Valid cypher query that can be used to check correctness of the statement"
+        }
+      ]
+    }
+  },
+  "generate_answer": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "statement": "Li-Fraumeni Syndrome is not associated with Gene MAN2B1",
+        "answer": true
+      },
+      {
+        "statement": "Nijmegen Breakage Syndrome is not associated with Gene NBN",
+        "answer": false
+      },
+      {
+        "statement": "Carney Complex is not associated with Gene PRKAR1A",
+        "answer": false
+      },
+      {
+        "statement": "Bernard-Soulier Syndrome is associated with Gene PRNP",
+        "answer": false
+      },
+      {
+        "statement": "Loeys-Dietz Syndrome associates Gene TGFBR1",
+        "answer": true
+      },
+      {
+        "statement": "KLEEFSTRA SYNDROME 1 is not associated with Gene EHMT1",
+        "answer": false
+      },
+      {
+        "statement": "Rothmund-Thomson syndrome is associated with Gene EHMT1",
+        "answer": false
+      },
+      {
+        "statement": "Biotinidase Deficiency is not associated with Gene BTD",
+        "answer": false
+      },
+      {
+        "statement": "Angelman Syndrome is not associated with Gene UBE3A",
+        "answer": false
+      },
+      {
+        "statement": "Noonan Syndrome is associated with Gene AGA",
+        "answer": false
+      },
+      {
+        "statement": "Fatal Familial Insomnia is not associated with Gene PRNP",
+        "answer": false
+      },
+      {
+        "statement": "CAMPOMELIC DYSPLASIA is associated with Gene TWIST1",
+        "answer": false
+      },
+      {
+        "statement": "Saethre-Chotzen Syndrome is not associated with Gene TWIST1",
+        "answer": false
+      },
+      {
+        "statement": "Canavan Disease is associated with Gene PRKAR1A",
+        "answer": false
+      },
+      {
+        "statement": "Peutz-Jeghers Syndrome associates Gene STK11",
+        "answer": true
+      },
+      {
+        "statement": "Hyperargininemia is not associated with Gene GLI3",
+        "answer": true
+      }
+    ],
+    "signature": {
+      "instructions": "Given the statement and cypher results, evaluate correctness of the statement with respect to the data in the graph. Do not use prior knowledge of biology",
+      "fields": [
+        {
+          "prefix": "Statement:",
+          "description": "The statement to be evaluated"
+        },
+        {
+          "prefix": "Context:",
+          "description": "Results of cypher query to check the validity of statemet agains ground truth"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    },
+    "extended_signature": {
+      "instructions": "Given the statement and cypher results, evaluate correctness of the statement with respect to the data in the graph. Do not use prior knowledge of biology",
+      "fields": [
+        {
+          "prefix": "Statement:",
+          "description": "The statement to be evaluated"
+        },
+        {
+          "prefix": "Context:",
+          "description": "Results of cypher query to check the validity of statemet agains ground truth"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    }
+  }
+}

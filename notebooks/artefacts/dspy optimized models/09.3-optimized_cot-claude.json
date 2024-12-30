@@ -1,0 +1,107 @@
+{
+  "self": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "statement": "Saethre-Chotzen Syndrome is not associated with Gene TWIST1",
+        "answer": false
+      },
+      {
+        "statement": "L-2-HYDROXYGLUTARIC ACIDURIA associates Gene L2HGDH",
+        "answer": true
+      },
+      {
+        "statement": "KLEEFSTRA SYNDROME 1 is not associated with Gene EHMT1",
+        "answer": false
+      },
+      {
+        "statement": "Nijmegen Breakage Syndrome is not associated with Gene NBN",
+        "answer": false
+      },
+      {
+        "statement": "Loeys-Dietz Syndrome associates Gene TGFBR2",
+        "answer": true
+      },
+      {
+        "statement": "Hyperargininemia is not associated with Gene GLI3",
+        "answer": true
+      },
+      {
+        "statement": "Li-Fraumeni Syndrome is not associated with Gene MAN2B1",
+        "answer": true
+      },
+      {
+        "statement": "Bernard-Soulier Syndrome is associated with Gene PRNP",
+        "answer": false
+      },
+      {
+        "statement": "Fatal Familial Insomnia is not associated with Gene PRNP",
+        "answer": false
+      },
+      {
+        "statement": "Noonan Syndrome is associated with Gene AGA",
+        "answer": false
+      },
+      {
+        "statement": "Loeys-Dietz Syndrome associates Gene TGFBR1",
+        "answer": true
+      },
+      {
+        "statement": "Peutz-Jeghers Syndrome associates Gene STK11",
+        "answer": true
+      },
+      {
+        "statement": "Canavan Disease is associated with Gene PRKAR1A",
+        "answer": false
+      },
+      {
+        "statement": "Rothmund-Thomson syndrome is associated with Gene EHMT1",
+        "answer": false
+      },
+      {
+        "statement": "Carney Complex is not associated with Gene PRKAR1A",
+        "answer": false
+      },
+      {
+        "statement": "L-2-HYDROXYGLUTARIC ACIDURIA is not associated with Gene MANBA",
+        "answer": true
+      }
+    ],
+    "signature": {
+      "instructions": "Given the statement, evaluate its correctness",
+      "fields": [
+        {
+          "prefix": "Statement:",
+          "description": "The statement to be evaluated"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    },
+    "extended_signature": {
+      "instructions": "You are a genetic disease expert tasked with evaluating the correctness of statements about genetic diseases and their associations with specific genes. Your role is to carefully analyze each statement and determine its accuracy based on your extensive knowledge of genetics and genetic disorders.\n\nFollow these steps to evaluate the statement:\n\n1. Carefully read and understand the given statement.\n2. Identify the key components: the genetic disease mentioned and the gene(s) it's associated with (or not associated with).\n3. Recall your knowledge about the specific genetic disease and its known genetic associations.\n4. Consider any qualifiers or specific conditions mentioned in the statement.\n5. Evaluate whether the stated association (or lack thereof) aligns with current scientific understanding.\n6. If you're unsure about any aspect, state this clearly in your reasoning.\n\nProvide your reasoning in a clear, step-by-step manner, explaining your thought process and the basis for your conclusion. Your reasoning should demonstrate a logical progression from the given statement to your final answer.\n\nAfter your reasoning, provide your final answer as either \"True\" if the statement is correct based on current genetic knowledge, or \"False\" if it is incorrect or contradicts known genetic associations.\n\nRemember, precision is crucial in genetics. If a statement is partially correct but contains any inaccuracy, it should be classified as False. If you don't have enough information to make a definitive judgment, explain why in your reasoning and err on the side of caution in your final answer.",
+      "fields": [
+        {
+          "prefix": "Statement:",
+          "description": "The statement to be evaluated"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    }
+  }
+}

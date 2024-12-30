@@ -1,0 +1,163 @@
+{
+  "generate_query": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "statement": "Pseudoachondroplasia associates Gene COMP",
+        "neo4j_schema": "Node properties:\n- **Entity**\n  - `literature`: LIST Min Size: 1, Max Size: 1\n  - `score`: FLOAT Example: \"0.03\"\n  - `source`: STRING Example: \"Open Targets\"\n  - `licence`: STRING Example: \"https:\/\/platform-docs.opentargets.org\/licence\"\n  - `version`: STRING Example: \"22.11\"\n  - `id`: STRING Example: \"obi:1110122\"\n  - `preferred_id`: STRING Example: \"obi\"\n  - `code`: STRING Example: \"http:\/\/purl.obolibrary.org\/obo\/OBI_1110122\"\n  - `name`: STRING Example: \"pathological process\"\n  - `description`: STRING Example: \"Abnormal, harmful processes caused by or associate\"\n  - `approvedSymbol`: STRING \n  - `biotype`: STRING \n- **ThingWithTaxon**\n  - `code`: STRING Example: \"http:\/\/purl.obolibrary.org\/obo\/OBI_1110122\"\n  - `name`: STRING Example: \"pathological process\"\n  - `source`: STRING Example: \"Open Targets\"\n  - `licence`: STRING Example: \"https:\/\/platform-docs.opentargets.org\/licence\"\n  - `version`: STRING Example: \"22.11\"\n  - `id`: STRING Example: \"obi:1110122\"\n  - `preferred_id`: STRING Example: \"obi\"\n  - `description`: STRING Example: \"Abnormal, harmful processes caused by or associate\"\n  - `targetInModel`: STRING \n  - `targetInModelMgiId`: STRING \n  - `targetFromSourceId`: STRING \n  - `approvedSymbol`: STRING \n  - `biotype`: STRING \n  - `modelPhenotypeLabel`: STRING \n- **DiseaseOrPhenotypicFeature**\n  - `code`: STRING Example: \"http:\/\/purl.obolibrary.org\/obo\/OBI_1110122\"\n  - `name`: STRING Example: \"pathological process\"\n  - `description`: STRING Example: \"Abnormal, harmful processes caused by or associate\"\n  - `source`: STRING Example: \"Open Targets\"\n  - `licence`: STRING Example: \"https:\/\/platform-docs.opentargets.org\/licence\"\n  - `version`: STRING Example: \"22.11\"\n  - `id`: STRING Example: \"obi:1110122\"\n  - `preferred_id`: STRING Example: \"obi\"\n  - `modelPhenotypeLabel`: STRING \n- **Disease**\n  - `code`: STRING Example: \"http:\/\/purl.obolibrary.org\/obo\/OBI_1110122\"\n  - `name`: STRING Example: \"pathological process\"\n  - `description`: STRING Example: \"Abnormal, harmful processes caused by or associate\"\n  - `source`: STRING Example: \"Open Targets\"\n  - `licence`: STRING Example: \"https:\/\/platform-docs.opentargets.org\/licence\"\n  - `version`: STRING Example: \"22.11\"\n  - `id`: STRING Example: \"obi:1110122\"\n  - `preferred_id`: STRING Example: \"obi\"\n- **Obi.Disease**\n  - `code`: STRING Available options: ['http:\/\/purl.obolibrary.org\/obo\/OBI_1110122', 'http:\/\/purl.obolibrary.org\/obo\/OBI_0001621', 'http:\/\/purl.obolibrary.org\/obo\/OBI_0001620', 'http:\/\/purl.obolibrary.org\/obo\/OBI_1110021']\n  - `name`: STRING Available options: ['pathological process', 'longitude', 'latitude', 'infect']\n  - `description`: STRING Available options: ['Abnormal, harmful processes caused by or associate', 'A measurement that is the measure of the longitude', 'A measurement that is the measure of the latitude ', 'The detrimental process in which an infectious age']\n  - `source`: STRING Available options: ['Open Targets']\n  - `licence`: STRING Available options: ['https:\/\/platform-docs.opentargets.org\/licence']\n  - `version`: STRING Available options: ['22.11']\n  - `id`: STRING Available options: ['obi:1110122', 'obi:0001621', 'obi:0001620', 'obi:1110021']\n  - `preferred_id`: STRING Available options: ['obi']\n- **BiologicalEntity**\n  - `code`: STRING Example: \"http:\/\/purl.obolibrary.org\/obo\/OBI_1110122\"\n  - `name`: STRING Example: \"pathological process\"\n  - `source`: STRING Example: \"Open Targets\"\n  - `licence`: STRING Example: \"https:\/\/platform-docs.opentargets.org\/licence\"\n  - `version`: STRING Example: \"22.11\"\n  - `id`: STRING Example: \"obi:1110122\"\n  - `preferred_id`: STRING Example: \"obi\"\n  - `description`: STRING Example: \"Abnormal, harmful processes caused by or associate\"\n  - `targetInModel`: STRING \n  - `targetInModelMgiId`: STRING \n  - `targetFromSourceId`: STRING \n  - `approvedSymbol`: STRING \n  - `biotype`: STRING \n  - `modelPhenotypeLabel`: STRING \n- **NamedThing**\n  - `code`: STRING Example: \"http:\/\/purl.obolibrary.org\/obo\/OBI_1110122\"\n  - `name`: STRING Example: \"pathological process\"\n  - `source`: STRING Example: \"Open Targets\"\n  - `licence`: STRING Example: \"https:\/\/platform-docs.opentargets.org\/licence\"\n  - `version`: STRING Example: \"22.11\"\n  - `id`: STRING Example: \"obi:1110122\"\n  - `preferred_id`: STRING Example: \"obi\"\n  - `description`: STRING Example: \"Abnormal, harmful processes caused by or associate\"\n  - `targetInModel`: STRING \n  - `targetInModelMgiId`: STRING \n  - `targetFromSourceId`: STRING \n  - `approvedSymbol`: STRING \n  - `biotype`: STRING \n  - `modelPhenotypeLabel`: STRING \n- **Ncit.Disease**\n  - `code`: STRING Available options: ['http:\/\/purl.obolibrary.org\/obo\/NCIT_C74532', 'http:\/\/purl.obolibrary.org\/obo\/NCIT_C117245', 'http:\/\/purl.obolibrary.org\/obo\/NCIT_C95746']\n  - `name`: STRING Available options: ['nervousness', 'decreased attention', 'sleepiness']\n  - `description`: STRING Available options: ['An uneasy psychological state; the anxious feeling', 'Impaired ability to focus on a subject or idea.', 'The sensation of struggling to remain awake.']\n  - `source`: STRING Available options: ['Open Targets']\n  - `licence`: STRING Available options: ['https:\/\/platform-docs.opentargets.org\/licence']\n  - `version`: STRING Available options: ['22.11']\n  - `id`: STRING Available options: ['ncit:C74532', 'ncit:C117245', 'ncit:C95746']\n  - `preferred_id`: STRING Available options: ['ncit']\n- **Mondo.Disease**\n  - `code`: STRING Example: \"http:\/\/purl.obolibrary.org\/obo\/MONDO_0000385\"\n  - `name`: STRING Example: \"benign digestive system neoplasm\"\n  - `source`: STRING Available options: ['Open Targets']\n  - `licence`: STRING Available options: ['https:\/\/platform-docs.opentargets.org\/licence']\n  - `version`: STRING Available options: ['22.11']\n  - `id`: STRING Example: \"mondo:0000385\"\n  - `preferred_id`: STRING Available options: ['mondo']\n  - `description`: STRING Example: \"A non-metastasizing neoplasm arising from any part\"\n- **Association**\n  - `literature`: LIST Min Size: 1, Max Size: 1\n  - `score`: FLOAT Example: \"0.03\"\n  - `source`: STRING Example: \"europepmc\"\n  - `licence`: STRING Example: \"CC BY-NC 4.0\"\n  - `version`: STRING Example: \"22.11\"\n  - `id`: STRING Example: \"e1dc736fdce96afef5df978522894e9ee54ee710\"\n  - `preferred_id`: STRING Example: \"id\"\n- **GeneToDiseaseAssociation**\n  - `literature`: LIST Min Size: 1, Max Size: 1\n  - `score`: FLOAT Example: \"0.03\"\n  - `source`: STRING Example: \"europepmc\"\n  - `licence`: STRING Example: \"CC BY-NC 4.0\"\n  - `version`: STRING Example: \"22.11\"\n  - `id`: STRING Example: \"e1dc736fdce96afef5df978522894e9ee54ee710\"\n  - `preferred_id`: STRING Example: \"id\"\n- **Literature.GeneToDiseaseAssociation**\n  - `literature`: LIST Min Size: 1, Max Size: 1\n  - `score`: FLOAT Example: \"0.03\"\n  - `source`: STRING Example: \"europepmc\"\n  - `licence`: STRING Example: \"CC BY-NC 4.0\"\n  - `version`: STRING Example: \"22.11\"\n  - `id`: STRING Example: \"e1dc736fdce96afef5df978522894e9ee54ee710\"\n  - `preferred_id`: STRING Example: \"id\"\n- **AnimalModel.GeneToDiseaseAssociation**\n  - `literature`: LIST Min Size: 1, Max Size: 11\n  - `score`: FLOAT Example: \"0.4947\"\n  - `source`: STRING Example: \"impc\"\n  - `licence`: STRING Example: \"NA\"\n  - `version`: STRING Example: \"22.11\"\n  - `id`: STRING Example: \"1ed93ef5539f388a1423ba9b98a7b71f610d2a10\"\n  - `preferred_id`: STRING Example: \"id\"\n- **Hp.Disease**\n  - `code`: STRING Example: \"http:\/\/purl.obolibrary.org\/obo\/HP_0002751\"\n  - `name`: STRING Example: \"Kyphoscoliosis\"\n  - `description`: STRING Example: \"An abnormal curvature of the spine in both a coron\"\n  - `source`: STRING Available options: ['Open Targets']\n  - `licence`: STRING Available options: ['https:\/\/platform-docs.opentargets.org\/licence']\n  - `version`: STRING Available options: ['22.11']\n  - `id`: STRING Example: \"hp:0002751\"\n  - `preferred_id`: STRING Available options: ['hp']\n- **RnaExpression.GeneToDiseaseAssociation**\n  - `literature`: LIST Min Size: 1, Max Size: 1\n  - `score`: FLOAT Example: \"0.04389890211572866\"\n  - `source`: STRING Example: \"expression_atlas\"\n  - `licence`: STRING Example: \"CC BY 4.0\"\n  - `version`: STRING Example: \"22.11\"\n  - `id`: STRING Example: \"00019f5ecfc23eeddacf2a7c1a2a51a55620e7ff\"\n  - `preferred_id`: STRING Example: \"id\"\n- **Oba.Disease**\n  - `code`: STRING Example: \"http:\/\/purl.obolibrary.org\/obo\/OBA_2001015\"\n  - `name`: STRING Example: \"age of onset of childhood onset asthma\"\n  - `description`: STRING Example: \"The age at which childhood onset asthma manifestat\"\n  - `source`: STRING Available options: ['Open Targets']\n  - `licence`: STRING Available options: ['https:\/\/platform-docs.opentargets.org\/licence']\n  - `version`: STRING Available options: ['22.11']\n  - `id`: STRING Example: \"oba:2001015\"\n  - `preferred_id`: STRING Available options: ['oba']\n- **Gene**\n  - `targetInModel`: STRING Example: \"Eya1\"\n  - `targetInModelMgiId`: STRING Example: \"MGI:109344\"\n  - `targetFromSourceId`: STRING Example: \"ENSG00000104313\"\n  - `source`: STRING Example: \"Open Targets\"\n  - `licence`: STRING Example: \"https:\/\/platform-docs.opentargets.org\/licence\"\n  - `version`: STRING Example: \"22.11\"\n  - `id`: STRING Example: \"ensembl:ENSMUSG00000025932\"\n  - `preferred_id`: STRING Example: \"ensembl\"\n  - `approvedSymbol`: STRING \n  - `biotype`: STRING \n- **MouseGene**\n  - `targetInModel`: STRING Example: \"Eya1\"\n  - `targetInModelMgiId`: STRING Example: \"MGI:109344\"\n  - `targetFromSourceId`: STRING Example: \"ENSG00000104313\"\n  - `source`: STRING Example: \"Open Targets\"\n  - `licence`: STRING Example: \"https:\/\/platform-docs.opentargets.org\/licence\"\n  - `version`: STRING Example: \"22.11\"\n  - `id`: STRING Example: \"ensembl:ENSMUSG00000025932\"\n  - `preferred_id`: STRING Example: \"ensembl\"\n- **KnownDrug.GeneToDiseaseAssociation**\n  - `score`: FLOAT Example: \"0.1\"\n  - `source`: STRING Example: \"chembl\"\n  - `licence`: STRING Example: \"CC BY-SA 3.0\"\n  - `version`: STRING Example: \"22.11\"\n  - `id`: STRING Example: \"99af831915f347fcb03e76c2f5ea7e2315bf77ce\"\n  - `preferred_id`: STRING Example: \"id\"\n- **Doid.Disease**\n  - `code`: STRING Available options: ['http:\/\/purl.obolibrary.org\/obo\/DOID_13406', 'http:\/\/purl.obolibrary.org\/obo\/DOID_0050890', 'http:\/\/purl.obolibrary.org\/obo\/DOID_10718', 'http:\/\/purl.obolibrary.org\/obo\/DOID_1947', 'http:\/\/purl.obolibrary.org\/obo\/DOID_7551', 'http:\/\/purl.obolibrary.org\/obo\/DOID_10113']\n  - `name`: STRING Available options: ['pulmonary sarcoidosis', 'synucleinopathy', 'giardiasis', 'trichomoniasis', 'gonorrhea', 'trypanosomiasis']\n  - `description`: STRING Available options: ['Sarcoidosis affecting the lung parenchyma. It is c', 'A neurodegenerative disease that is characterized ', 'A parasitic protozoa infectious disease that invol', 'A parasitic protozoa infectious disease that is ca', 'A primary bacterial infectious disease that is a s']\n  - `source`: STRING Available options: ['Open Targets']\n  - `licence`: STRING Available options: ['https:\/\/platform-docs.opentargets.org\/licence']\n  - `version`: STRING Available options: ['22.11']\n  - `id`: STRING Available options: ['doid:13406', 'doid:0050890', 'doid:10718', 'doid:1947', 'doid:7551', 'doid:10113']\n  - `preferred_id`: STRING Available options: ['doid']\n- **Efo.Disease**\n  - `code`: STRING Example: \"http:\/\/www.ebi.ac.uk\/efo\/EFO_0800502\"\n  - `name`: STRING Example: \"linoleoyl-docosahexaenoyl-glycerol (18:2\/22:6) [1]\"\n  - `description`: STRING Example: \"Quantification of the amount of linoleoyl-docosahe\"\n  - `source`: STRING Example: \"Open Targets\"\n  - `licence`: STRING Example: \"https:\/\/platform-docs.opentargets.org\/licence\"\n  - `version`: STRING Example: \"22.11\"\n  - `id`: STRING Example: \"efo:0800502\"\n  - `preferred_id`: STRING Example: \"efo\"\n- **PhenotypicFeature**\n  - `modelPhenotypeLabel`: STRING Example: \"abnormal trigeminal nerve morphology\"\n  - `source`: STRING Example: \"Open Targets\"\n  - `licence`: STRING Example: \"https:\/\/platform-docs.opentargets.org\/licence\"\n  - `version`: STRING Example: \"22.11\"\n  - `id`: STRING Example: \"mp:0001914\"\n  - `preferred_id`: STRING Example: \"mp\"\n- **MousePhenotype**\n  - `modelPhenotypeLabel`: STRING Example: \"abnormal trigeminal nerve morphology\"\n  - `source`: STRING Example: \"Open Targets\"\n  - `licence`: STRING Example: \"https:\/\/platform-docs.opentargets.org\/licence\"\n  - `version`: STRING Example: \"22.11\"\n  - `id`: STRING Example: \"mp:0001914\"\n  - `preferred_id`: STRING Example: \"mp\"\n- **Otar.Disease**\n  - `code`: STRING Available options: ['http:\/\/www.ebi.ac.uk\/efo\/OTAR_0000018', 'http:\/\/www.ebi.ac.uk\/efo\/OTAR_0000006', 'http:\/\/www.ebi.ac.uk\/efo\/OTAR_0000014', 'http:\/\/www.ebi.ac.uk\/efo\/OTAR_0000020', 'http:\/\/www.ebi.ac.uk\/efo\/OTAR_0000009', 'http:\/\/www.ebi.ac.uk\/efo\/OTAR_0000003', 'http:\/\/www.ebi.ac.uk\/efo\/OTAR_0000010', 'http:\/\/www.ebi.ac.uk\/efo\/OTAR_0000017', 'http:\/\/www.ebi.ac.uk\/efo\/OTAR_0000019']\n  - `name`: STRING Available options: ['genetic, familial or congenital disease', 'musculoskeletal or connective tissue disease', 'pregnancy or perinatal disease', 'nutritional or metabolic disease', 'injury, poisoning or other complication', 'cyst', 'respiratory or thoracic disease', 'reproductive system or breast disease', 'familial disease']\n  - `description`: STRING Available options: ['A disease caused by genetic modifications inherite', 'A disease involving the musculoskeletal or connect', 'A disease occurring during pregnancy or shortly af', 'Damage inflicted on the body as the direct of indi', 'A sac-like closed membranous structure that may be', 'A disease affecting the respiratory system or othe', 'A disease involving the reproductive system or the', 'A disease occurring in or affecting members of a f']\n  - `source`: STRING Available options: ['Open Targets']\n  - `licence`: STRING Available options: ['https:\/\/platform-docs.opentargets.org\/licence']\n  - `version`: STRING Available options: ['22.11']\n  - `id`: STRING Available options: ['otar:0000018', 'otar:0000006', 'otar:0000014', 'otar:0000020', 'otar:0000009', 'otar:0000003', 'otar:0000010', 'otar:0000017', 'otar:0000019']\n  - `preferred_id`: STRING Available options: ['otar']\n- **HumanGene**\n  - `approvedSymbol`: STRING Example: \"FEZ2\"\n  - `biotype`: STRING Example: \"protein_coding\"\n  - `source`: STRING Example: \"Open Targets\"\n  - `licence`: STRING Example: \"https:\/\/platform-docs.opentargets.org\/licence\"\n  - `version`: STRING Example: \"22.11\"\n  - `id`: STRING Example: \"ensembl:ENSG00000171055\"\n  - `preferred_id`: STRING Example: \"ensembl\"\n- **Orphanet.Disease**\n  - `code`: STRING Example: \"http:\/\/www.orpha.net\/ORDO\/Orphanet_158684\"\n  - `name`: STRING Example: \"Epidermolysis bullosa simplex with pyloric atresia\"\n  - `description`: STRING Example: \"Epidermolysis bullosa simplex with pyloric atresia\"\n  - `source`: STRING Available options: ['Open Targets']\n  - `licence`: STRING Available options: ['https:\/\/platform-docs.opentargets.org\/licence']\n  - `version`: STRING Available options: ['22.11']\n  - `id`: STRING Example: \"orphanet:158684\"\n  - `preferred_id`: STRING Available options: ['orphanet']\n- **SomaticMutation.GeneToDiseaseAssociation**\n  - `literature`: LIST Min Size: 1, Max Size: 8\n  - `score`: FLOAT Example: \"0.25\"\n  - `source`: STRING Example: \"cancer_gene_census\"\n  - `licence`: STRING Example: \"Commercial use for Open Targets\"\n  - `version`: STRING Example: \"22.11\"\n  - `id`: STRING Example: \"00bb9bb991a5d157ac87eb0a0a858d3225e91f7e\"\n  - `preferred_id`: STRING Example: \"id\"\n- **AffectedPathway.GeneToDiseaseAssociation**\n  - `score`: FLOAT Example: \"1.0\"\n  - `source`: STRING Example: \"reactome\"\n  - `licence`: STRING Example: \"CC BY 4.0\"\n  - `version`: STRING Example: \"22.11\"\n  - `id`: STRING Example: \"0573156c99191306506c7d365c089e90481066e2\"\n  - `preferred_id`: STRING Example: \"id\"\n  - `literature`: LIST Min Size: 1, Max Size: 21\n- **GoTerm**\n  - `name`: STRING Example: \"adenosine 3,5-bisphosphate transmembrane transport\"\n  - `source`: STRING Example: \"Open Targets\"\n  - `licence`: STRING Example: \"https:\/\/platform-docs.opentargets.org\/licence\"\n  - `version`: STRING Example: \"22.11\"\n  - `id`: STRING Example: \"go:0071106\"\n  - `preferred_id`: STRING Example: \"go\"\n- **GeneticAssociation.GeneToDiseaseAssociation**\n  - `score`: FLOAT Example: \"0.35\"\n  - `source`: STRING Example: \"eva\"\n  - `licence`: STRING Example: \"EMBL-EBI terms of use\"\n  - `version`: STRING Example: \"22.11\"\n  - `id`: STRING Example: \"4c75fa3ffc3e72f7b7496fd13377a701dac6e0e7\"\n  - `preferred_id`: STRING Example: \"id\"\n- **Ogms.Disease**\n  - `code`: STRING Available options: ['http:\/\/purl.obolibrary.org\/obo\/OGMS_0000063']\n  - `name`: STRING Available options: ['disease course']\n  - `description`: STRING Available options: ['The totality of all processes through which a give']\n  - `source`: STRING Available options: ['Open Targets']\n  - `licence`: STRING Available options: ['https:\/\/platform-docs.opentargets.org\/licence']\n  - `version`: STRING Available options: ['22.11']\n  - `id`: STRING Available options: ['ogms:0000063']\n  - `preferred_id`: STRING Available options: ['ogms']\n- **_GraphConfig**\n  - `_objectPropertyLabel`: STRING Available options: ['Relationship']\n  - `_rangeRel`: STRING Available options: ['RANGE']\n  - `_classLabel`: STRING Available options: ['Class']\n  - `_subClassOfRel`: STRING Available options: ['SCO']\n  - `_handleMultival`: INTEGER Min: 0, Max: 0\n  - `_dataTypePropertyLabel`: STRING Available options: ['Property']\n  - `_subPropertyOfRel`: STRING Available options: ['SPO']\n  - `_handleRDFTypes`: INTEGER Min: 0, Max: 0\n  - `_classNamePropName`: STRING Available options: ['name']\n  - `_handleVocabUris`: INTEGER Min: 0, Max: 0\n  - `_applyNeo4jNaming`: BOOLEAN \n  - `_relNamePropName`: STRING Available options: ['name']\n  - `_domainRel`: STRING Available options: ['DOMAIN']\n  - `_keepLangTag`: BOOLEAN \n  - `_keepCustomDataTypes`: BOOLEAN \nRelationship properties:\n\nThe relationships:\n(:Entity)-[:IS_PART_OF]->(:Entity)\n(:Entity)-[:IS_PART_OF]->(:Association)\n(:Entity)-[:IS_PART_OF]->(:GeneToDiseaseAssociation)\n(:Entity)-[:IS_PART_OF]->(:Literature.GeneToDiseaseAssociation)\n(:Entity)-[:IS_PART_OF]->(:AnimalModel.GeneToDiseaseAssociation)\n(:Entity)-[:IS_PART_OF]->(:GeneticAssociation.GeneToDiseaseAssociation)\n(:Entity)-[:IS_PART_OF]->(:RnaExpression.GeneToDiseaseAssociation)\n(:Entity)-[:IS_PART_OF]->(:AffectedPathway.GeneToDiseaseAssociation)\n(:ThingWithTaxon)-[:IS_PART_OF]->(:Entity)\n(:ThingWithTaxon)-[:IS_PART_OF]->(:Association)\n(:ThingWithTaxon)-[:IS_PART_OF]->(:GeneToDiseaseAssociation)\n(:ThingWithTaxon)-[:IS_PART_OF]->(:GeneticAssociation.GeneToDiseaseAssociation)\n(:ThingWithTaxon)-[:IS_PART_OF]->(:KnownDrug.GeneToDiseaseAssociation)\n(:ThingWithTaxon)-[:IS_PART_OF]->(:AnimalModel.GeneToDiseaseAssociation)\n(:ThingWithTaxon)-[:IS_PART_OF]->(:Literature.GeneToDiseaseAssociation)\n(:ThingWithTaxon)-[:IS_PART_OF]->(:SomaticMutation.GeneToDiseaseAssociation)\n(:ThingWithTaxon)-[:IS_PART_OF]->(:AffectedPathway.GeneToDiseaseAssociation)\n(:ThingWithTaxon)-[:IS_PART_OF]->(:RnaExpression.GeneToDiseaseAssociation)\n(:DiseaseOrPhenotypicFeature)-[:IS_PART_OF]->(:Entity)\n(:DiseaseOrPhenotypicFeature)-[:IS_PART_OF]->(:Association)\n(:DiseaseOrPhenotypicFeature)-[:IS_PART_OF]->(:GeneToDiseaseAssociation)\n(:DiseaseOrPhenotypicFeature)-[:IS_PART_OF]->(:AnimalModel.GeneToDiseaseAssociation)\n(:DiseaseOrPhenotypicFeature)-[:IS_PART_OF]->(:GeneticAssociation.GeneToDiseaseAssociation)\n(:DiseaseOrPhenotypicFeature)-[:IS_PART_OF]->(:Literature.GeneToDiseaseAssociation)\n(:DiseaseOrPhenotypicFeature)-[:IS_PART_OF]->(:KnownDrug.GeneToDiseaseAssociation)\n(:DiseaseOrPhenotypicFeature)-[:IS_PART_OF]->(:SomaticMutation.GeneToDiseaseAssociation)\n(:DiseaseOrPhenotypicFeature)-[:IS_PART_OF]->(:AffectedPathway.GeneToDiseaseAssociation)\n(:DiseaseOrPhenotypicFeature)-[:IS_PART_OF]->(:RnaExpression.GeneToDiseaseAssociation)\n(:Disease)-[:IS_PART_OF]->(:Entity)\n(:Disease)-[:IS_PART_OF]->(:Association)\n(:Disease)-[:IS_PART_OF]->(:GeneToDiseaseAssociation)\n(:Disease)-[:IS_PART_OF]->(:GeneticAssociation.GeneToDiseaseAssociation)\n(:Disease)-[:IS_PART_OF]->(:AnimalModel.GeneToDiseaseAssociation)\n(:Disease)-[:IS_PART_OF]->(:Literature.GeneToDiseaseAssociation)\n(:Disease)-[:IS_PART_OF]->(:RnaExpression.GeneToDiseaseAssociation)\n(:Disease)-[:IS_PART_OF]->(:KnownDrug.GeneToDiseaseAssociation)\n(:Disease)-[:IS_PART_OF]->(:AffectedPathway.GeneToDiseaseAssociation)\n(:Disease)-[:IS_PART_OF]->(:SomaticMutation.GeneToDiseaseAssociation)\n(:Obi.Disease)-[:IS_PART_OF]->(:Entity)\n(:Obi.Disease)-[:IS_PART_OF]->(:Association)\n(:Obi.Disease)-[:IS_PART_OF]->(:GeneToDiseaseAssociation)\n(:Obi.Disease)-[:IS_PART_OF]->(:Literature.GeneToDiseaseAssociation)\n(:BiologicalEntity)-[:IS_PART_OF]->(:Entity)\n(:BiologicalEntity)-[:IS_PART_OF]->(:Association)\n(:BiologicalEntity)-[:IS_PART_OF]->(:GeneToDiseaseAssociation)\n(:BiologicalEntity)-[:IS_PART_OF]->(:Literature.GeneToDiseaseAssociation)\n(:BiologicalEntity)-[:IS_PART_OF]->(:GeneticAssociation.GeneToDiseaseAssociation)\n(:BiologicalEntity)-[:IS_PART_OF]->(:AnimalModel.GeneToDiseaseAssociation)\n(:BiologicalEntity)-[:IS_PART_OF]->(:KnownDrug.GeneToDiseaseAssociation)\n(:BiologicalEntity)-[:IS_PART_OF]->(:SomaticMutation.GeneToDiseaseAssociation)\n(:BiologicalEntity)-[:IS_PART_OF]->(:RnaExpression.GeneToDiseaseAssociation)\n(:BiologicalEntity)-[:IS_PART_OF]->(:AffectedPathway.GeneToDiseaseAssociation)\n(:NamedThing)-[:IS_PART_OF]->(:Entity)\n(:NamedThing)-[:IS_PART_OF]->(:Association)\n(:NamedThing)-[:IS_PART_OF]->(:GeneToDiseaseAssociation)\n(:NamedThing)-[:IS_PART_OF]->(:AnimalModel.GeneToDiseaseAssociation)\n(:NamedThing)-[:IS_PART_OF]->(:GeneticAssociation.GeneToDiseaseAssociation)\n(:NamedThing)-[:IS_PART_OF]->(:Literature.GeneToDiseaseAssociation)\n(:NamedThing)-[:IS_PART_OF]->(:KnownDrug.GeneToDiseaseAssociation)\n(:NamedThing)-[:IS_PART_OF]->(:SomaticMutation.GeneToDiseaseAssociation)\n(:NamedThing)-[:IS_PART_OF]->(:AffectedPathway.GeneToDiseaseAssociation)\n(:NamedThing)-[:IS_PART_OF]->(:RnaExpression.GeneToDiseaseAssociation)\n(:Mondo.Disease)-[:IS_PART_OF]->(:Entity)\n(:Mondo.Disease)-[:IS_PART_OF]->(:Association)\n(:Mondo.Disease)-[:IS_PART_OF]->(:GeneToDiseaseAssociation)\n(:Mondo.Disease)-[:IS_PART_OF]->(:AnimalModel.GeneToDiseaseAssociation)\n(:Mondo.Disease)-[:IS_PART_OF]->(:Literature.GeneToDiseaseAssociation)\n(:Mondo.Disease)-[:IS_PART_OF]->(:GeneticAssociation.GeneToDiseaseAssociation)\n(:Mondo.Disease)-[:IS_PART_OF]->(:KnownDrug.GeneToDiseaseAssociation)\n(:Mondo.Disease)-[:IS_PART_OF]->(:SomaticMutation.GeneToDiseaseAssociation)\n(:Mondo.Disease)-[:IS_PART_OF]->(:RnaExpression.GeneToDiseaseAssociation)\n(:Mondo.Disease)-[:IS_PART_OF]->(:AffectedPathway.GeneToDiseaseAssociation)\n(:Hp.Disease)-[:IS_PART_OF]->(:Entity)\n(:Hp.Disease)-[:IS_PART_OF]->(:Association)\n(:Hp.Disease)-[:IS_PART_OF]->(:GeneToDiseaseAssociation)\n(:Hp.Disease)-[:IS_PART_OF]->(:Literature.GeneToDiseaseAssociation)\n(:Hp.Disease)-[:IS_PART_OF]->(:KnownDrug.GeneToDiseaseAssociation)\n(:Hp.Disease)-[:IS_PART_OF]->(:GeneticAssociation.GeneToDiseaseAssociation)\n(:Hp.Disease)-[:IS_PART_OF]->(:SomaticMutation.GeneToDiseaseAssociation)\n(:Hp.Disease)-[:IS_PART_OF]->(:AnimalModel.GeneToDiseaseAssociation)\n(:Hp.Disease)-[:IS_PART_OF]->(:AffectedPathway.GeneToDiseaseAssociation)\n(:Hp.Disease)-[:IS_PART_OF]->(:RnaExpression.GeneToDiseaseAssociation)\n(:Gene)-[:IS_PART_OF]->(:Entity)\n(:Gene)-[:IS_PART_OF]->(:Association)\n(:Gene)-[:IS_PART_OF]->(:GeneToDiseaseAssociation)\n(:Gene)-[:IS_PART_OF]->(:RnaExpression.GeneToDiseaseAssociation)\n(:Gene)-[:IS_PART_OF]->(:GeneticAssociation.GeneToDiseaseAssociation)\n(:Gene)-[:IS_PART_OF]->(:Literature.GeneToDiseaseAssociation)\n(:Gene)-[:IS_PART_OF]->(:AffectedPathway.GeneToDiseaseAssociation)\n(:Gene)-[:IS_PART_OF]->(:AnimalModel.GeneToDiseaseAssociation)\n(:Gene)-[:IS_PART_OF]->(:KnownDrug.GeneToDiseaseAssociation)\n(:Gene)-[:IS_PART_OF]->(:SomaticMutation.GeneToDiseaseAssociation)\n(:Doid.Disease)-[:IS_PART_OF]->(:Entity)\n(:Doid.Disease)-[:IS_PART_OF]->(:Association)\n(:Doid.Disease)-[:IS_PART_OF]->(:GeneToDiseaseAssociation)\n(:Doid.Disease)-[:IS_PART_OF]->(:KnownDrug.GeneToDiseaseAssociation)\n(:Doid.Disease)-[:IS_PART_OF]->(:Literature.GeneToDiseaseAssociation)\n(:Doid.Disease)-[:IS_PART_OF]->(:GeneticAssociation.GeneToDiseaseAssociation)\n(:Efo.Disease)-[:IS_PART_OF]->(:Entity)\n(:Efo.Disease)-[:IS_PART_OF]->(:Association)\n(:Efo.Disease)-[:IS_PART_OF]->(:GeneToDiseaseAssociation)\n(:Efo.Disease)-[:IS_PART_OF]->(:SomaticMutation.GeneToDiseaseAssociation)\n(:Efo.Disease)-[:IS_PART_OF]->(:KnownDrug.GeneToDiseaseAssociation)\n(:Efo.Disease)-[:IS_PART_OF]->(:Literature.GeneToDiseaseAssociation)\n(:Efo.Disease)-[:IS_PART_OF]->(:GeneticAssociation.GeneToDiseaseAssociation)\n(:Efo.Disease)-[:IS_PART_OF]->(:RnaExpression.GeneToDiseaseAssociation)\n(:Efo.Disease)-[:IS_PART_OF]->(:AnimalModel.GeneToDiseaseAssociation)\n(:Efo.Disease)-[:IS_PART_OF]->(:AffectedPathway.GeneToDiseaseAssociation)\n(:Otar.Disease)-[:IS_PART_OF]->(:Entity)\n(:Otar.Disease)-[:IS_PART_OF]->(:Association)\n(:Otar.Disease)-[:IS_PART_OF]->(:GeneToDiseaseAssociation)\n(:Otar.Disease)-[:IS_PART_OF]->(:Literature.GeneToDiseaseAssociation)\n(:HumanGene)-[:IS_PART_OF]->(:Entity)\n(:HumanGene)-[:IS_PART_OF]->(:Association)\n(:HumanGene)-[:IS_PART_OF]->(:GeneToDiseaseAssociation)\n(:HumanGene)-[:IS_PART_OF]->(:RnaExpression.GeneToDiseaseAssociation)\n(:HumanGene)-[:IS_PART_OF]->(:Literature.GeneToDiseaseAssociation)\n(:HumanGene)-[:IS_PART_OF]->(:AffectedPathway.GeneToDiseaseAssociation)\n(:HumanGene)-[:IS_PART_OF]->(:GeneticAssociation.GeneToDiseaseAssociation)\n(:HumanGene)-[:IS_PART_OF]->(:AnimalModel.GeneToDiseaseAssociation)\n(:HumanGene)-[:IS_PART_OF]->(:KnownDrug.GeneToDiseaseAssociation)\n(:HumanGene)-[:IS_PART_OF]->(:SomaticMutation.GeneToDiseaseAssociation)\n(:Orphanet.Disease)-[:IS_PART_OF]->(:Entity)\n(:Orphanet.Disease)-[:IS_PART_OF]->(:Association)\n(:Orphanet.Disease)-[:IS_PART_OF]->(:GeneToDiseaseAssociation)\n(:Orphanet.Disease)-[:IS_PART_OF]->(:GeneticAssociation.GeneToDiseaseAssociation)\n(:Orphanet.Disease)-[:IS_PART_OF]->(:AnimalModel.GeneToDiseaseAssociation)\n(:Orphanet.Disease)-[:IS_PART_OF]->(:Literature.GeneToDiseaseAssociation)\n(:Orphanet.Disease)-[:IS_PART_OF]->(:KnownDrug.GeneToDiseaseAssociation)\n(:Orphanet.Disease)-[:IS_PART_OF]->(:AffectedPathway.GeneToDiseaseAssociation)\n(:Orphanet.Disease)-[:IS_PART_OF]->(:SomaticMutation.GeneToDiseaseAssociation)\n(:Orphanet.Disease)-[:IS_PART_OF]->(:RnaExpression.GeneToDiseaseAssociation)",
+        "reasoning": "The statement \"Pseudoachondroplasia associates Gene COMP\" suggests that there is a relationship between the disease Pseudoachondroplasia and the gene COMP. In the provided Neo4j schema, diseases and genes can be connected through various types of associations, such as `GeneToDiseaseAssociation`. To verify this statement, we need to check if there is a `GeneToDiseaseAssociation` between a node representing Pseudoachondroplasia and a node representing the gene COMP. The disease nodes can be of types like `Disease`, `Obi.Disease`, `Mondo.Disease`, etc., and the gene nodes can be of types like `Gene` or `HumanGene`. We will look for a `GeneToDiseaseAssociation` relationship between these nodes.",
+        "cypher": "```cypher\nMATCH (d)-[:IS_PART_OF]->(a:GeneToDiseaseAssociation)<-[:IS_PART_OF]-(g)\nWHERE (d.name = \"Pseudoachondroplasia\" OR d.description CONTAINS \"Pseudoachondroplasia\")\nAND (g.approvedSymbol = \"COMP\" OR g.targetInModel = \"COMP\")\nRETURN d, a, g\n```"
+      },
+      {
+        "statement": "Denys-Drash Syndrome is not associated with Gene WT1",
+        "answer": [
+          1130,
+          1130
+        ]
+      },
+      {
+        "statement": "Fabry Disease associates Gene GLA",
+        "answer": [
+          1563,
+          1563
+        ]
+      },
+      {
+        "statement": "Carney Complex is not associated with Gene PRKAR1A",
+        "answer": [
+          74,
+          74
+        ]
+      },
+      {
+        "statement": "Nijmegen Breakage Syndrome is not associated with Gene NBN",
+        "answer": [
+          2338,
+          2338
+        ]
+      },
+      {
+        "statement": "Loeys-Dietz Syndrome associates Gene TGFBR1",
+        "answer": [
+          391,
+          391
+        ]
+      },
+      {
+        "statement": "Tuberous Sclerosis associates Gene TSC2",
+        "answer": [
+          8693,
+          8693
+        ]
+      },
+      {
+        "statement": "Gray Platelet Syndrome is not associated with Gene NBEAL2",
+        "answer": [
+          310,
+          310
+        ]
+      },
+      {
+        "statement": "Congenital contractural arachnodactyly associates Gene FBN2",
+        "answer": [
+          1491,
+          1491
+        ]
+      },
+      {
+        "statement": "DOYNE HONEYCOMB RETINAL DYSTROPHY associates Gene EFEMP1",
+        "answer": [
+          70,
+          70
+        ]
+      },
+      {
+        "statement": "Sandhoff Disease is not associated with Gene HEXB",
+        "answer": [
+          504,
+          504
+        ]
+      },
+      {
+        "statement": "Pfeiffer Syndrome associates Gene FGFR2",
+        "answer": [
+          179,
+          179
+        ]
+      },
+      {
+        "statement": "Pseudoxanthoma Elasticum associates Gene ABCC6",
+        "answer": [
+          958,
+          958
+        ]
+      },
+      {
+        "statement": "Borjeson-Forssman-Lehmann syndrome is not associated with Gene PHF6",
+        "answer": [
+          90,
+          90
+        ]
+      },
+      {
+        "statement": "Multiple Endocrine Neoplasia Type 2b associates Gene RET",
+        "answer": [
+          398,
+          398
+        ]
+      },
+      {
+        "statement": "Peutz-Jeghers Syndrome associates Gene STK11",
+        "answer": [
+          1966,
+          1966
+        ]
+      }
+    ],
+    "signature": {
+      "instructions": "Generate cypher statement to check correctness of a statement",
+      "fields": [
+        {
+          "prefix": "Statement:",
+          "description": "${statement}"
+        },
+        {
+          "prefix": "Neo 4 J Schema:",
+          "description": "Schema of a neo4j database"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Cypher:",
+          "description": "Valid cypher query that can be used to check correctness of the statement"
+        }
+      ]
+    },
+    "extended_signature": {
+      "instructions": "You are tasked with verifying the accuracy of a critical biomedical assertion regarding gene-disease associations. Given a statement and a Neo4j database schema, generate a Cypher query to determine the validity of the statement by checking for the existence of a specific `GeneToDiseaseAssociation` node. This task is essential for ensuring the integrity of genetic research data, which can impact patient diagnosis and treatment. Carefully analyze the schema and statement to construct a precise query that will either confirm or refute the association in question.",
+      "fields": [
+        {
+          "prefix": "Statement:",
+          "description": "${statement}"
+        },
+        {
+          "prefix": "Neo 4 J Schema:",
+          "description": "Schema of a neo4j database"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Cypher:",
+          "description": "Valid cypher query that can be used to check correctness of the statement"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "generate_query": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "statement": "Carney Complex is not associated with Gene PRKAR1A",
+        "answer": [
+          74,
+          74
+        ]
+      },
+      {
+        "statement": "Denys-Drash Syndrome is not associated with Gene WT1",
+        "answer": [
+          1130,
+          1130
+        ]
+      },
+      {
+        "statement": "Congenital contractural arachnodactyly associates Gene FBN2",
+        "answer": [
+          1491,
+          1491
+        ]
+      },
+      {
+        "statement": "Mulibrey Nanism is not associated with Gene TRIM37",
+        "answer": [
+          152,
+          152
+        ]
+      },
+      {
+        "statement": "Borjeson-Forssman-Lehmann syndrome is not associated with Gene PHF6",
+        "answer": [
+          90,
+          90
+        ]
+      },
+      {
+        "statement": "Multiple Endocrine Neoplasia Type 2b associates Gene RET",
+        "answer": [
+          398,
+          398
+        ]
+      },
+      {
+        "statement": "Sandhoff Disease is not associated with Gene HEXB",
+        "answer": [
+          504,
+          504
+        ]
+      },
+      {
+        "statement": "Loeys-Dietz Syndrome associates Gene TGFBR2",
+        "answer": [
+          311,
+          311
+        ]
+      },
+      {
+        "statement": "Tuberous Sclerosis associates Gene TSC2",
+        "answer": [
+          8693,
+          8693
+        ]
+      },
+      {
+        "statement": "DOYNE HONEYCOMB RETINAL DYSTROPHY associates Gene EFEMP1",
+        "answer": [
+          70,
+          70
+        ]
+      },
+      {
+        "statement": "CAMPOMELIC DYSPLASIA associates Gene SOX9",
+        "answer": [
+          270,
+          270
+        ]
+      },
+      {
+        "statement": "Fabry Disease associates Gene GLA",
+        "answer": [
+          1563,
+          1563
+        ]
+      },
+      {
+        "statement": "Pseudoachondroplasia associates Gene COMP",
+        "answer": [
+          219,
+          219
+        ]
+      },
+      {
+        "statement": "Bernard-Soulier Syndrome associates Gene GP1BA",
+        "answer": [
+          119,
+          119
+        ]
+      },
+      {
+        "statement": "Pseudoxanthoma Elasticum associates Gene ABCC6",
+        "answer": [
+          958,
+          958
+        ]
+      },
+      {
+        "statement": "Loeys-Dietz Syndrome associates Gene TGFBR1",
+        "answer": [
+          391,
+          391
+        ]
+      }
+    ],
+    "signature": {
+      "instructions": "Generate cypher statement to check correctness of a statement",
+      "fields": [
+        {
+          "prefix": "Statement:",
+          "description": "${statement}"
+        },
+        {
+          "prefix": "Neo 4 J Schema:",
+          "description": "Schema of a neo4j database"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Cypher:",
+          "description": "Valid cypher query that can be used to check correctness of the statement"
+        }
+      ]
+    },
+    "extended_signature": {
+      "instructions": "Create a Cypher query to verify the accuracy of a genetic association statement between a disease and a gene. Utilize the provided Neo4j schema to identify and match the relevant nodes and relationships that represent the entities in the statement. Include a detailed reasoning process to explain the steps taken to construct the query. Return the generated Cypher query along with the reasoning.",
+      "fields": [
+        {
+          "prefix": "Statement:",
+          "description": "${statement}"
+        },
+        {
+          "prefix": "Neo 4 J Schema:",
+          "description": "Schema of a neo4j database"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Cypher:",
+          "description": "Valid cypher query that can be used to check correctness of the statement"
+        }
+      ]
+    }
+  }
+}

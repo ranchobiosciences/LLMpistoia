@@ -1,0 +1,180 @@
+{
+  "generate_query": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "statement": "Bernard-Soulier Syndrome associates Gene GP1BB",
+        "answer": true
+      },
+      {
+        "statement": "Polycythemia Vera is not associated with Gene JAK2",
+        "answer": false
+      },
+      {
+        "statement": "Argininosuccinic Aciduria is associated with Gene ABCD1",
+        "answer": false
+      },
+      {
+        "statement": "Cystinuria is not associated with Gene GP1BB",
+        "answer": true
+      },
+      {
+        "statement": "Mastocytosis is not associated with Gene KIT",
+        "answer": false
+      },
+      {
+        "statement": "Pierson syndrome is not associated with Gene LAMB2",
+        "answer": false
+      },
+      {
+        "statement": "Argininosuccinic Aciduria associates Gene ASL",
+        "answer": true
+      },
+      {
+        "statement": "Cherubism is not associated with Gene UBR1",
+        "answer": true
+      },
+      {
+        "statement": "Progeria associates Gene LMNA",
+        "answer": true
+      },
+      {
+        "statement": "CHARGE Syndrome is associated with Gene APRT",
+        "answer": false
+      }
+    ],
+    "signature": {
+      "instructions": "Generate cypher statement to check correctness of a statement",
+      "fields": [
+        {
+          "prefix": "Statement:",
+          "description": "${statement}"
+        },
+        {
+          "prefix": "Schema:",
+          "description": "Schema of a neo4j database"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Cypher:",
+          "description": "Valid cypher query that can be used to check correctness of the statement"
+        }
+      ]
+    },
+    "extended_signature": {
+      "instructions": "For the given statement regarding the association between a disease and a gene, generate a Cypher query that checks for the existence of a relationship in the Neo4j graph database. The query should return the relevant nodes that indicate whether the association is true or false. Use the format: `MATCH (d:Disease {name: 'DiseaseName'})-[:IS_PART_OF]->(g:Gene {approvedSymbol: 'GeneSymbol'}) RETURN d, g` for positive assertions, and for negative assertions, use `MATCH (g:Gene {approvedSymbol: 'GeneSymbol'})-[:IS_PART_OF]->(a:GeneToDiseaseAssociation)<-[:IS_PART_OF]-(d:Disease {name: 'DiseaseName'}) RETURN COUNT(a) AS associationCount`.",
+      "fields": [
+        {
+          "prefix": "Statement:",
+          "description": "${statement}"
+        },
+        {
+          "prefix": "Schema:",
+          "description": "Schema of a neo4j database"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Cypher:",
+          "description": "Valid cypher query that can be used to check correctness of the statement"
+        }
+      ]
+    }
+  },
+  "generate_answer": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "statement": "Polycythemia Vera is not associated with Gene JAK2",
+        "answer": false
+      },
+      {
+        "statement": "Pierson syndrome is not associated with Gene LAMB2",
+        "answer": false
+      },
+      {
+        "statement": "Cystinuria is not associated with Gene GP1BB",
+        "answer": true
+      },
+      {
+        "statement": "CHARGE Syndrome is associated with Gene APRT",
+        "answer": false
+      },
+      {
+        "statement": "Cherubism is not associated with Gene UBR1",
+        "answer": true
+      },
+      {
+        "statement": "Argininosuccinic Aciduria is associated with Gene ABCD1",
+        "answer": false
+      },
+      {
+        "statement": "Bernard-Soulier Syndrome associates Gene GP1BB",
+        "answer": true
+      },
+      {
+        "statement": "Progeria associates Gene LMNA",
+        "answer": true
+      },
+      {
+        "statement": "Mastocytosis is not associated with Gene KIT",
+        "answer": false
+      },
+      {
+        "statement": "Argininosuccinic Aciduria associates Gene ASL",
+        "answer": true
+      }
+    ],
+    "signature": {
+      "instructions": "Given the statement and cypher results, evaluate correctness of the statement with respect to the data in the graph. Do not use prior knowledge of biology",
+      "fields": [
+        {
+          "prefix": "Statement:",
+          "description": "The statement to be evaluated"
+        },
+        {
+          "prefix": "Context:",
+          "description": "Results of cypher query to check the validity of statemet agains ground truth"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    },
+    "extended_signature": {
+      "instructions": "Given the statement and cypher results, evaluate correctness of the statement with respect to the data in the graph. Do not use prior knowledge of biology",
+      "fields": [
+        {
+          "prefix": "Statement:",
+          "description": "The statement to be evaluated"
+        },
+        {
+          "prefix": "Context:",
+          "description": "Results of cypher query to check the validity of statemet agains ground truth"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    }
+  }
+}

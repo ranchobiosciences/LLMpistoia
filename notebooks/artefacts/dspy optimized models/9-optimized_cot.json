@@ -1,0 +1,83 @@
+{
+  "self": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "statement": "Bernard-Soulier Syndrome associates Gene GP1BB",
+        "answer": true
+      },
+      {
+        "statement": "Polycythemia Vera is not associated with Gene JAK2",
+        "answer": false
+      },
+      {
+        "statement": "Argininosuccinic Aciduria is associated with Gene ABCD1",
+        "answer": false
+      },
+      {
+        "statement": "Cystinuria is not associated with Gene GP1BB",
+        "answer": true
+      },
+      {
+        "statement": "Mastocytosis is not associated with Gene KIT",
+        "answer": false
+      },
+      {
+        "statement": "Pierson syndrome is not associated with Gene LAMB2",
+        "answer": false
+      },
+      {
+        "statement": "Argininosuccinic Aciduria associates Gene ASL",
+        "answer": true
+      },
+      {
+        "statement": "Cherubism is not associated with Gene UBR1",
+        "answer": true
+      },
+      {
+        "statement": "Progeria associates Gene LMNA",
+        "answer": true
+      },
+      {
+        "statement": "CHARGE Syndrome is associated with Gene APRT",
+        "answer": false
+      }
+    ],
+    "signature": {
+      "instructions": "Given the statement, evaluate its correctness",
+      "fields": [
+        {
+          "prefix": "Statement:",
+          "description": "The statement to be evaluated"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    },
+    "extended_signature": {
+      "instructions": "In the context of genetic counseling, it is essential to accurately assess the validity of statements regarding genetic conditions and their associated genes. Given a statement about a specific disease and its relationship to a gene, evaluate its correctness. Provide a detailed reasoning for your evaluation, explaining the biological basis of the association or lack thereof, and conclude with a clear answer indicating whether the statement is true or false. This assessment is crucial for informed decision-making in clinical settings where genetic information impacts patient care.",
+      "fields": [
+        {
+          "prefix": "Statement:",
+          "description": "The statement to be evaluated"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    }
+  }
+}
