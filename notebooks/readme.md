@@ -1,13 +1,25 @@
 # Knowledge graph querying strategies
 
-## 0. Basic queries
-
+### 0. Basic queries
 
 **00-basic_queries.ipynb**
 
 This notebook demonstrates the integration of a Neo4j knowledge graph populated with biological data from OpenTargets using the Biocypher package. It includes examples of how to connect to the Neo4j database, execute Cypher queries, and analyze the graph's structure and content. The notebook also highlights the use of the LangChain framework to interact with various large language models (LLMs) such as OpenAI, Anthropic, and Mistral, showcasing their ability to generate Cypher queries and enhance graph exploration.
 
-## 1. Naïve generation of Cypher queries from natural language questions. 
+## Evaluation using 3Q test-set
+
+The 3Q (3 questions) test-set was shared by Pistoia. It consists of 3 questions:
+
+
+| Question  | What counts as success |
+|-|-|
+| *Q1:* What (or how strong, or is there any) is the evidence between TDP-43 and amyotrophic lateral sclerosis (ALS)? | LLM retrieves gene-disease associations between TDP-43 (gene symbol TARDBP) and ALS or amyotrophic lateral sclerosis. Should be ~1400 associations.                           |
+| *Q2:* What is the evidence linking TDP-43 to cancer in animal models?                 | LLM uses correct disease names (any of *cancer*, *neoplasm*, *tumor*), correct gene symbol (TARDBP), and uses filter on association type (*AnimalModel*). Should be 0 associations. |
+| *Q3:* What (or is there) is the clinical evidence linking BRAF to Melanoma?           | LLM retrieves associations between BRAF and melanoma. *KnownDrug* association type is explicitly used. Other association types are allowed. Should be at least ~200 associations. |
+
+
+
+### 1. Naïve generation of Cypher queries from natural language questions. 
 
 **01-naive_generation.ipynb**
 
@@ -22,7 +34,7 @@ Results include:
 - 01d - Investigation of the effect of temperature on the prompt
 
 
-## 2. Template-based. 
+### 2. Template-based. 
 
 **02-template_based.ipynb**
 
@@ -35,7 +47,7 @@ Three sub-strategies are evaluated:
 - 2b - with decoy queries and examples of correct query
 - 2c - with decoy queries and without examples
 
-## 3. Template-based query (2)
+### 3. Template-based query (2)
 
 **03-template_based_2.ipynb**
 
@@ -46,7 +58,7 @@ Three options are evaluated:
 - 3b - examples of correct queries and "normal" graph schema is provided
 - 3c - examples of correct queries and "enhanced" graph schema is provided
 
-## 4. Biochatter
+### 4. Biochatter
 
 **04-biochatter.ipynb**
 
@@ -57,11 +69,13 @@ Thus BioChatter's approach to generating Cypher queries involves a structured, m
 - Step 3: Property selection
 - Step 4: Final query generation
 
-## 5. Agentic-based approach
+### 5. Agentic-based approach
 
-The code for agentic-based approach is located in **05-agentic** subfolder
+The code for agentic-based approach is located in **05-agentic** subfolder. 
 
-## 7. Deployment of specialized LLMs to use with Cypher (5 LLMs in total)
+The **05-agentic_3Q.py** and **05-agentic_biomix.py** implement agent-based approach with internal (@coder executing cypher queries and reflecting on results) and external (@checklist agent verifying correctness of the approach) loops. Results are saved as chat logs in html format as well as processed txt files with final reports (for biomix test-set).
+
+### 7. Deployment of specialized LLMs to use with Cypher (5 LLMs in total)
 
 **07-text2cypher.ipynb**
 
@@ -83,7 +97,7 @@ Ignoring option 7a, we will evaluate 5 different fine-tuned llama3 variants:
 These variants were deployed locally with ollama. 3Q test-set was used to evaluate the output.
 
 
-## 8. Adapters with Predibase
+### 8. Adapters with Predibase
 
 **08-adapters_predibase.ipynb**
 
@@ -94,7 +108,7 @@ In the implementation we use [Predibase](https://predibase.com/), a platform tha
 We evaluate adapter (https://huggingface.co/sarangsonar/mistral_instruct_cypher) which is based on mistralai/Mistral-7B-Instruct-v0.1, a fine-tuned mistralai/Mistral-7B-v0.1 and compare its performance with performance of the base model.
 
 
-## 9. DSPy framework
+### 9. DSPy framework
 
 **09.1-dspy-gpt4o.ipynb**
 **09.2-dspy-claude.ipynb**
@@ -119,3 +133,60 @@ All strategies are tested with gpt-4o (09.1) and claude LLM (09.2).
 Training DSPy on true/false biomix questions can lead to overfitting due to the high level of background knowledge (~100%). To distinguish between its biological knowledge and knowledge graph utilization, we will train it to generate correct Cypher statements instead.
 
 To achieve this, we need an extended biomix test set that includes genes, diseases, and the number of relationships between genes and diseases in the knowledge graph. We will then ask the LLM to generate queries that output the correct number of results. This was separately investigated in **09.3-dspy-cypher.ipynb**
+
+### 14. Automatically generated schema
+
+**14-graph_schema.ipynb**
+
+Database schema generated by LangChain neo4j is added to the prompt. 
+
+- 14a - "normal" schema (generated by LangChain) is used
+- 14b - "enhanced" schema is used
+
+
+### 16. Using GraphQA
+
+**16-graphQA.ipynb**
+
+GraphQA chain from LangChain framework was used in "[Biomedical knowledge graph-optimized prompt generation for large language models](https://academic.oup.com/bioinformatics/article/40/9/btae560/7759620#483970793)". To implement, the instructions from https://python.langchain.com/docs/integrations/graphs/neo4j_cypher/ were followed.
+
+
+## Evaluation using BioMix test-set
+
+BioMix test-set based on https://huggingface.co/datasets/kg-rag/BiomixQA. It was filtered to make sure questions could be answered using OpenTargets Knowledge Graph. Out of 134 True/False questions that can be answered with OT KG, we randomly sampled 50 questions:
+- 25 questions in the form "disease is associated with gene" where answer is True
+- 25 questions in the form "disease is not associated with gene" where answer is False
+
+This was further augmented by generating gene/disease combinations (same genes & diseases, but no relationship according to OT Knowledge Graph
+- 25 questions in the form "disease is associated with gene" where answer is False
+- 25 questions in the form "disease is not associated with gene" where answer is True
+
+The test-set is in `../biomix/testset` folder.
+
+
+### 0. Baseline knowledge
+
+**biomix00-baseline.ipynb**
+
+Testing background knowledge of LLMs on biomix test-set
+
+### 2. Template-based strategy
+
+**biomix02-template_based.ipynb**
+
+Hand-code query templates and only allow the LLM to (a) select the right template from a finite collection of templates using the natural language prompt and (b) populate the plug-in parameters in these query templates, also using information supplied in the prompt. 
+
+Best performing strategy based on 3Q evaluation was tested: decoy queries + examples. Additionally, prompt was augmented with guardrails to improve performance.
+
+### 8. Adapters-based strategy
+
+**biomix08-adapters_predibase.ipynb** 
+
+Evaluation of mistral adapter and comparison to original model on BioMix test-set. 
+
+### 14. Automatically generated schema.
+
+**biomix14-graph_schema.ipynb**
+
+Strategy 14b (enhanced schema) is tested
+

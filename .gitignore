@@ -16,3 +16,7 @@
 /utils/.env
 
 /notebooks/.temp/*
+/notebooks/05-agentic/.env/anthropic_pistoia.json
+/notebooks/05-agentic/.env/neo4j_pistoia.json
+/notebooks/05-agentic/.env/openai_pistoia.json
+/notebooks/05-agentic/aillc/__pycache__/*.pyc
