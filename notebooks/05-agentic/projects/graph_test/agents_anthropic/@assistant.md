@@ -25,6 +25,6 @@ description: message to data scientist (for "stuck", "other") or to user ("help"
 
 ```json
 {
-   "model":"gpt-4o"
+   "model":"claude-sonnet-4-6"
 }
 ```

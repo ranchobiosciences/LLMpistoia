@@ -33,13 +33,13 @@ claude_haiku = {
 claude_sonnet = {
     'vendor' : 'Anthropic',
     'level' : 3,
-    'name'  : 'claude-3-5-sonnet-20240620',
+    'name'  : 'claude-sonnet-4-6',
     'max_tokens' : 4096
 }
 claude_opus = {
     'vendor' : 'Anthropic',
     'level' : 4,
-    'name'  : 'claude-3-opus-20240229',
+    'name'  : 'claude-opus-4-6',
     'max_tokens' : 4096
 }
 
@@ -54,6 +54,7 @@ models = {
     'claude-sonnet' : claude_sonnet.copy(),
     'claude-opus' : claude_opus.copy(),
     'claude-3-5-sonnet-20240620' : claude_sonnet.copy(),
+    'claude-sonnet-4-6' : claude_sonnet.copy(),
 
     'human' : human_model.copy()
 }
@@ -144,8 +145,24 @@ class LLM:
                 messages = msg[1],
                 system = msg[0]
             )
-            # TODO: json output not yet supported for anthropic models
-            return response.content[0].text
+            text = response.content[0].text
+            if json_output:
+                # Extract JSON from response text
+                import re
+                # Try to find JSON in code blocks first
+                pattern = r"```(?:json)?\s*([\s\S]*?)```"
+                matches = re.findall(pattern, text)
+                for match in matches:
+                    try:
+                        return json.loads(match.strip())
+                    except JSONDecodeError:
+                        continue
+                # Try parsing the whole response as JSON
+                try:
+                    return json.loads(text.strip())
+                except JSONDecodeError:
+                    raise ModelResponseError(f"Failed to extract JSON from Anthropic response: {text[:500]}")
+            return text
 
                 
         elif model['vendor'] == 'human':
