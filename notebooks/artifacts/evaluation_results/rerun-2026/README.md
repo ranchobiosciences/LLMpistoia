@@ -68,7 +68,6 @@ Re-ran all 100 template queries from the 2024 Strategy 2 evaluation to detect ch
 - `05-biomix_template_2024_vs_2026.xlsx` — all 100 template queries re-run, 2024 count vs 2026 count
 
 ### Reference
-- `05-evaluations_curated_example.xlsx` — 2024 evaluation format (batches 1-12)
 - `evaluation_rules.md` — evaluation criteria and failure type taxonomy
 - `Pistoia-KG-rerun.xlsx` — master tracking spreadsheet
 
@@ -82,7 +81,10 @@ Zip files contain HTML chat logs and text reports for each run:
 - `05-biomix_sonnet-4-6.zip` — BioMix, sonnet
 
 ### 2024 Baseline
-- `05-evaluation-2024/` — original 2024 HTML chat logs (batches 1-12)
+Available at `notebooks/artifacts/evaluation_results/`:
+- `05-evaluation.zip` — 2024 HTML chat logs (batches 1-12)
+- `05-evaluations_curated.xlsx` — 2024 curated evaluation (batches 1-12)
+- `biomix02b-evaluations.xlsx` — 2024 template-based biomix results (used for graph change comparison)
 
 ## Analysis scripts
 
