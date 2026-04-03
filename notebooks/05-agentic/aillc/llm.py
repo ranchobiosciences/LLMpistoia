@@ -49,6 +49,7 @@ models = {
     'gpt-4-turbo': level_4_openai_model.copy(), 
     'gpt-4o': level_4_openai_model.copy(),
     'gpt-3.5-turbo': level_3_openai_model.copy(),
+    'gpt-5.2': level_4_openai_model.copy(),
 
     'claude-haiku' : claude_haiku.copy(),
     'claude-sonnet' : claude_sonnet.copy(),
