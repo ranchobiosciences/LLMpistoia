@@ -36,6 +36,6 @@ The graph database contains all diseases, genes and gene-disease relationships e
 
 ```json
 {
-   "model":"claude-3-5-sonnet-20240620"
+   "model":"claude-sonnet-4-6"
 }
 ```

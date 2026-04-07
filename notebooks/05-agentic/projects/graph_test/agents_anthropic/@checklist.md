@@ -22,6 +22,6 @@ These are standard questions on data graph extraction project:
 
 ```json
 {
-   "model":"gpt-4o"
+   "model":"claude-sonnet-4-6"
 }
 ```
